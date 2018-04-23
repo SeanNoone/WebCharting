@@ -1,11 +1,29 @@
 // We create the tile layer that will be the background of our map.
 var graymap = L.tileLayer("https://api.mapbox.com/styles/v1/mapbox/light-v9/tiles/256/{z}/{x}/{y}?access_to" +
-  "ken=pk.eyJ1Ijoia2pnMzEwIiwiYSI6ImNpdGRjbWhxdjAwNG0yb3A5b21jOXluZTUifQ.T6YbdDixkO" +
+  "pk.eyJ1Ijoic2Vhbm5vb25lMjkiLCJhIjoiY2plajc1b3Z0MGQ3aDMzcGg4czh1aHM0aSJ9.MPw1Wd0tPqtQepIiONVHjw" +
   "BWH_k9GbS8JQ", {
     attribution: "Map data &copy;" +
       "<a href='http://openstreetmap.org'>OpenStreetMap</a> contributors," +
       "<a href='http://creativecommons.org/licenses/by-sa/2.0/'>CC-BY-SA</a>" +
       "Imagery &copy <a href='http://mapbox.com'>Mapbox</a>",
+    maxZoom: 18
+  });
+
+  var satellitemap = L.tileLayer("https://api.mapbox.com/styles/v1/mapbox/satellite-streets-v9/tiles/256/{z}/{x}/{y}?" +
+  "access_token=pk.eyJ1Ijoic2Vhbm5vb25lMjkiLCJhIjoiY2plajc1b3Z0MGQ3aDMzcGg4czh1aHM0aSJ9.MPw1Wd0tPqtQepIiONVHjw", {
+    attribution: "Map data &copy;" +
+      "<a href='http://openstreetmap.org'>OpenStreetMap</a> contributors," +
+      "<a href='http://creativecommons.org/licenses/by-sa/2.0/'>CC-BY-SA</a>" +
+      "Imagery &copy; <a href='http://mapbox.com'>Mapbox</a>",
+    maxZoom: 18
+  });
+
+  var outdoors = L.tileLayer("https://api.mapbox.com/styles/v1/mapbox/outdoors-v9/tiles/256/{z}/{x}/{y}?" +
+  "access_token=pk.eyJ1Ijoic2Vhbm5vb25lMjkiLCJhIjoiY2plajc1b3Z0MGQ3aDMzcGg4czh1aHM0aSJ9.MPw1Wd0tPqtQepIiONVHjw", {
+    attribution: "Map data &copy;" +
+      "<a href='http://openstreetmap.org'>OpenStreetMap</a> contributors," +
+      "<a href='http://creativecommons.org/licenses/by-sa/2.0/'>CC-BY-SA</a>" +
+      "Imagery &copy; <a href='http://mapbox.com'>Mapbox</a>",
     maxZoom: 18
   });
 
